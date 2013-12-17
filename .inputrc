@@ -1,9 +1,9 @@
-# arrow up searches history backward
+# Up arrow searches history backward
 "\e[A":history-search-backward
-# arrow down searches history forward
+# Down arrow searches history forward
 "\e[B":history-search-forward
 
-# vim-style tab completion in bash
+# Vim-style tab completion in bash
 TAB: menu-complete
 "\e[Z": menu-complete-backward
 
