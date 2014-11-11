@@ -1,7 +1,13 @@
-cp .bash_profile ~
-cp .gitconfig ~
-cp .gvimrc ~
-cp .inputrc ~
-cp .vimrc ~
+declare -a scripts=(
+	".bash_profile"
+	".gitconfig"
+	".gvimrc"
+	".inputrc"
+	".vimrc"
+)
 
-echo "dotfiles installed"
+for script in "${scripts[@]}"
+do
+	echo "installing $script"
+	cp -n "$script" ~ || echo "$script already exists!"
+done
