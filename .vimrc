@@ -6,6 +6,8 @@ set autoindent
 set number
 set ruler
 
+set nowrap
+
 syntax on
 
 command W w
